@@ -69,7 +69,7 @@ pipeline {
             // so we can retrieve the version in later steps
             sh "echo \$(jx-release-version) > VERSION"
           }
-          dir ('./charts/node-http-demo1') {
+          dir ('./charts/node-test-jx') {
             container('nodejs') {
               sh "make tag"
             }
@@ -89,7 +89,7 @@ pipeline {
           branch 'master'
         }
         steps {
-          dir ('./charts/node-http-demo1') {
+          dir ('./charts/node-test-jx') {
             container('nodejs') {
               sh 'jx step changelog --version v\$(cat ../../VERSION)'
 
