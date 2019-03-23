@@ -15,7 +15,7 @@ pipeline {
             sh "git config --global credential.helper store"
             sh "jx step git credentials"
             // so we can retrieve the version in later steps
-           sh "jx promote --app node-http-demo1 --version ${Nodejs} --env production"
+           sh "jx promote --app node-jx1 --version ${Nodejs} --env production"
 
           }
         }
