@@ -11,7 +11,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "sonarqube-scanner": "^2.4.0"
   },
   "dependencies": {
     "express": "^4.16.4"
