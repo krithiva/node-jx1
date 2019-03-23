@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: draft
-  tag: dev
+  repository: 10.3.247.199:5000/krithiva/node-http-demo1
+  tag: 0.0.1
   pullPolicy: IfNotPresent
 service:
   name: node-http-demo1
